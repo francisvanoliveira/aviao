@@ -1,14 +1,11 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://sprites/background.png" type="Texture" id=1]
 [ext_resource path="res://sprites/ship.png" type="Texture" id=2]
 [ext_resource path="res://scripts/aviao.gd" type="Script" id=3]
-[ext_resource path="res://scenes/asteroid.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/biscoito.tscn" type="PackedScene" id=4]
 
 [sub_resource type="CanvasItemMaterial" id=1]
-
-[sub_resource type="StreamTexture" id=2]
-flags = 4
 
 [node name="game" type="Node2D"]
 
@@ -31,9 +28,23 @@ hframes = 2
 [node name="blaster" type="Position2D" parent="aviao"]
 position = Vector2( -2.87238, -31.2096 )
 
-[node name="biscoito1" type="Sprite" parent="."]
-position = Vector2( 77.7484, 43.0399 )
-texture = SubResource( 2 )
-
-[node name="asteroid" parent="." instance=ExtResource( 4 )]
+[node name="biscoito" parent="." instance=ExtResource( 4 )]
 position = Vector2( 79.0443, 45.4084 )
+
+[node name="biscoito2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 24.789, 63.8347 )
+
+[node name="biscoito3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 126.222, 66.4456 )
+
+[node name="biscoito4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 136.829, 133.621 )
+
+[node name="biscoito5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 101.473, 98.2654 )
+
+[node name="biscoito6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 15.9135, 139.985 )
+
+[node name="biscoito7" parent="." instance=ExtResource( 4 )]
+position = Vector2( 49.1475, 108.872 )

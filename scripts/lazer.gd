@@ -16,5 +16,5 @@ func tiroforadatela():
 
 
 func lazerbater(area):
-	print(area)
+	queue_free()
 
